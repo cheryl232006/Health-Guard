@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutri Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #0d9488 !important;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: #0d9488 !important;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .navbar-nav .nav-link {
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    color: #0d9488;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+    background-color: #0d9488;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 500;
+    }
+
+    .main_title {
+      font-family: 'Tangerine', cursive;
+      font-size: 4rem;
+      color: #e29e63;
+      text-align: center;
+      margin-block: 0.2rem;
+    }
+
+    .description {
+      font-family: cursive;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      border-radius: 12px;
+      background-color: #fff8f2;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+      margin: 1rem;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      background-color: #f0f9ff;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-title {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      font-weight: 700;
+    }
+
+    .card-text {
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #ffa07a, #ff7f50);
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #ff7f50, #ffa07a);
+    }
+
+    .card-header {
+      font-weight: bold;
+      color: #555;
+      background: transparent;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Info Bar -->
+  <div class="bg-teal text-white py-2 px-4 d-flex justify-content-between small" style="background-color: #14b8a6;">
+    <div>🟢 Open 24/7 – Trusted Digital Health Assistant</div>
+    <div>📧 help@healthguard.com &nbsp; | &nbsp; 📞 +91 98765 43210</div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fs-4 fw-bold text-teal" href="#">HealthGuard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3 fs-6">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="healthplanner.html">Health Planner</a></li>
+          <li class="nav-item"><a class="nav-link" href="first.html">Quick First Aid</a></li>
+          <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<body>
+  <h1 class="main_title">Health in 17: Your Daily Wellness Blueprint</h1>
+  <h3 class="description">Backed by ICMR, these 17 science-based guidelines make healthy eating simple, smart, and sustainable.</h3>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+      
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-carrot me-2"></i>Guideline 1</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Fuel Your Body with a Variety of Foods: One Plate, Many Powers</h5>
+          <p class="card-text">Emphasizes the importance of including multiple food groups for optimal health.</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_1_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-drumstick-bite me-2"></i>Guideline 2</div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Nourishing Beginnings</h5>
+          <p class="card-text">From first heartbeat to first steps—nourish every stage with care.</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_2_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 3</div>
+        <div class="card-body text-warning">
+          <h5 class="card-title">Early Nourishment Matters</h5>
+          <p class="card-text">Start solids at 6 months—nourish every child through health and illness.</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_3_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 4</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Vegetables, Legumes & Healthy Fats</h5>
+          <p class="card-text">Incorporating a variety of vegetables, legumes, and healthy fats into daily meals</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_4_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 5</div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Your Guide to Fats & Salt Balance</h5>
+          <p class="card-text">Striking the right balance of fats and salt helps protect your heart, boost energy, and keep blood pressure in check—small tweaks, big impact!</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_5_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 6</div>
+        <div class="card-body text-warning">
+          <h5 class="card-title">Active Living & Waist-Wise Eating</h5>
+          <p class="card-text">Active living and mindful eating work together to reduce belly fat, sharpen your energy, and protect your health—one step, one bite at a time!</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_6_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 7</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Your first defense against foodborne illness and poor health</h5>
+          <p class="card-text">From washing hands to checking expiry dates, smart cooking habits make every meal safer and every bite more nourishing.</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_7_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 8</div>
+        <div class="card-body text-success">
+          <h5 class="card-title">Choose water and whole foods to stay energized and alert</h5>
+          <p class="card-text">Smart sipping and snacking keep your digestion smooth, your mood lifted, and your health on track—all day long.</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_8_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+      <div class="card border-0 p-3">
+        <div class="card-header"><i class="fas fa-seedling me-2"></i>Guideline 9</div>
+        <div class="card-body text-warning">
+          <h5 class="card-title">Smart Choices for Seniors: Eat Well, Read Right</h5>
+          <p class="card-text">Support long, independent living—knowledge is nourishment!</p>
+          <button class="btn btn-primary" onclick="location.href='Guideline_9_PDF.pdf';">Explore</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+   
+  <footer class="bg-light text-center py-3 small text-muted mt-4">
+    &copy; 2025 HealthGuard. Empowering India through preventive care.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>

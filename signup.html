@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - HealthGuard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .bg-teal {
+      background-color: #14b8a6 !important;
+    }
+    .navbar-nav .nav-link {
+      padding: 8px 16px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      color: #0d9488;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: #0d9488;
+      color: white !important;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    }
+    .signup-box {
+      max-width: 400px;
+      margin: 80px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .signup-box:hover {
+      transform: scale(1.01);
+    }
+    .signup-box h2 {
+      font-weight: bold;
+      color: #0d9488;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-control:focus {
+      border-color: #0d9488;
+      box-shadow: 0 0 0 0.2rem rgba(13, 148, 136, 0.25);
+    }
+    .btn-signup {
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-weight: 500;
+      box-shadow: 0 0 10px rgba(13, 148, 136, 0.4);
+    }
+    .btn-signup:hover {
+      animation: pulse 0.6s ease;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .back-link {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .back-link a {
+      color: #0d9488;
+      text-decoration: none;
+    }
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Create Your Account</h2>
+    <form id="signupForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Create Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-signup">Sign Up</button>
+      </div>
+    </form>
+    <p class="text-center small mt-3">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+    <div class="back-link">
+      <a href="index.html"><i class="bi bi-arrow-left"></i> Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // Fake sign-up → redirect
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Aid Guide | HealthGuard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    }
+    .bg-teal {
+      background-color: #14b8a6 !important;
+    }
+    .navbar-nav .nav-link {
+      padding: 8px 16px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      color: #0d9488;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      background-color: #0d9488;
+      color: white !important;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      height: 80vh;
+      padding-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url('https://images.pexels.com/photos/32292593/pexels-photo-32292593.jpeg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+    }
+    .hero .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 50px 50px 50px;
+      margin-top: 40px;
+      border-radius: 12px;
+      max-width: 850px;
+    }
+    .section {
+      max-width: 950px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #0d9488;
+      font-weight: 600;
+    }
+    .emergency {
+      background-color: #e1f5fe;
+      border-left: 5px solid #0288d1;
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .emergency h5 {
+      color: #0288d1;
+      font-weight: 600;
+    }
+    .emergency-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .emergency-text {
+      flex: 1 1 60%;
+    }
+    .emergency-video {
+      flex: 1 1 35%;
+      min-width: 280px;
+    }
+    .emergency iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .helpline {
+      background-color: #fff3cd;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.25rem;
+      border-left: 6px solid #ffc107;
+      margin-top: 30px;
+    }
+    .btn-custom {
+      background: linear-gradient(135deg, #0d9488, #14b8a6);
+      color: white;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-weight: 500;
+      box-shadow: 0 0 10px rgba(13, 148, 136, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-teal text-white py-2 px-4 d-flex justify-content-between small">
+    <div>🟢 Open 24/7 – Trusted Digital Health Assistant</div>
+    <div>📧 help@healthguard.com &nbsp; | &nbsp; 📞 +91 98765 43210</div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fs-4 fw-bold" style="color: #0d9488;">HealthGuard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3 fs-6">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="nutri_guide.html">Nutrition</a></li>
+          <li class="nav-item"><a class="nav-link" href="healthplanner.html">Health Planner</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Quick First Aid</a></li>
+          <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="overlay px-3 py-4 rounded">
+      <h1>Emergency First Aid Made Simple</h1>
+      <p>Follow life‑saving steps before help arrives.</p>
+      <button class="btn btn-custom mt-3" onclick="document.getElementById('firstaid-section').scrollIntoView({ behavior: 'smooth' });">
+        View First Aid Guides
+      </button>
+    </div>
+  </div>
+
+  <div class="section" id="firstaid-section">
+    <h2>Emergency First Aid Instructions</h2>
+    <p class="text-muted mb-4">Simple, reliable steps to handle health emergencies before medical help arrives.</p>
+
+    <div class="emergency">
+      <h5>🫀 CPR (Cardiopulmonary Resuscitation)</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Check responsiveness and breathing.</p><p>✔ Call 108 for help.</p><p>✔ Start chest compressions (100–120 per minute) in the center of the chest.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/2PngCv7NjaI" title="🫀 CPR (Cardiopulmonary Resuscitation) Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🩸 Severe Bleeding</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Apply firm pressure using a clean cloth or bandage.</p><p>✔ Keep the injured area elevated above heart level.</p><p>✔ Do not remove soaked cloth – add another layer instead.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/NxO5LvgqZe0" title="🩸 Severe Bleeding Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🦴 Fracture or Broken Bone</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Keep the affected area still and supported.</p><p>✔ Use a splint or rolled-up newspaper for temporary support.</p><p>✔ Apply ice (wrapped in cloth) to reduce swelling.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/2v8vlXgGXwE" title="🦴 Fracture or Broken Bone Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🔥 Burns</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Cool the burn under running water for at least 10 minutes.</p><p>✔ Do not apply toothpaste or ice.</p><p>✔ Cover loosely with sterile cloth or gauze.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/sauqm3mvJ40" title="🔥 Burns Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🌁 Heat Stroke</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Move the person to a cooler place immediately.</p><p>✔ Remove excess clothing and apply cool, damp cloths.</p><p>✔ Give small sips of water if conscious.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/R6VdoV8dZRc" title="🌁 Heat Stroke Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🫈 Snake Bite</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Keep the person calm and still to slow the spread of venom.</p><p>✔ Immobilize the bitten limb and keep it lower than the heart.</p><p>✔ Do not suck out venom or apply ice. Seek medical help immediately.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/nH8o-bgwo_g" title="🫈 Snake Bite Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🌧 Drowning (Post-Rescue)</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Check for breathing and pulse immediately.</p><p>✔ Start CPR if necessary and call emergency services.</p><p>✔ Turn the person to their side to help drain water if they vomit.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/0kxOUhlSKX8" title="🌧 Drowning (Post-Rescue) Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🧠 Stroke</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Use the FAST method: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services.</p><p>✔ Keep the person comfortable and do not give food or drink.</p><p>✔ Note the time symptoms started — it helps doctors with treatment.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/EYUDS3wVWEk" title="🧠 Stroke Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🫁 Choking</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Ask if the person can talk or cough. If not, perform abdominal thrusts (Heimlich maneuver).</p><p>✔ For children, give 5 back blows followed by 5 chest thrusts.</p><p>✔ If the person becomes unconscious, start CPR immediately and call 108.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/GymXjJJ7Ugo" title="🫁 Choking Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>⚡ Electric Shock</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Turn off the power source before touching the victim.</p><p>✔ Do not touch the person with bare hands if they're still in contact with electricity.</p><p>✔ Check for responsiveness and breathing; start CPR if needed.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/61urGQrmeNM" title="⚡ Electric Shock Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="emergency">
+      <h5>🐝 Allergic Reaction (Anaphylaxis)</h5>
+      <div class="emergency-content">
+        <div class="emergency-text">
+    <p>✔ Look for swelling, difficulty breathing, or hives.</p><p>✔ Use an epinephrine auto-injector if available.</p><p>✔ Lay the person flat and call emergency services immediately.</p>
+        </div>
+        <div class="emergency-video">
+          <iframe src="https://www.youtube.com/embed/yqaLKuhMCPw" title="🐝 Allergic Reaction (Anaphylaxis) Video" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="helpline">
+      📞 <strong>Emergency Ambulance Helpline:</strong> 108 (India-wide)
+    </div>
+  </div>
+
+  <footer class="bg-light text-center py-3 small text-muted">
+    &copy; 2025 HealthGuard. Empowering India through preventive care.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
